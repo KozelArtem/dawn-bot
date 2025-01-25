@@ -9,13 +9,13 @@
 # └────────────────────────┘
 # Foundation settings that determine the application's basic operational parameters
 
-threads: 3                    # Controls parallel processing capacity
+threads: 50                   # Controls parallel processing capacity
                              # Higher values increase performance but consume more resources
 
-use_proxy_for_imap: false    # Enables secure proxy routing for IMAP connections
+use_proxy_for_imap: true    # Enables secure proxy routing for IMAP connections
                              # Recommended for enhanced privacy and security
 
-keepalive_interval: 300      # Connection monitoring frequency (seconds)
+keepalive_interval: 120      # Connection monitoring frequency (seconds)
                              # Ensures stable network connectivity
 
 referral_codes:              # Marketing tracking codes
@@ -38,7 +38,7 @@ redirect_settings:
 # └────────────────────────┘
 # Integration settings for automated CAPTCHA resolution
 
-captcha_module: 2captcha     # CAPTCHA service selection:
+captcha_module: anticaptcha     # CAPTCHA service selection:
                              # ▸ 2captcha: Primary solution
                              # ▸ anticaptcha: Secondary option
 
@@ -62,16 +62,10 @@ delay_before_start:
 
 imap_settings:
   # Global Services
-  gmail.com: imap.gmail.com          # Google Mail (SSL required)
   yahoo.com: imap.mail.yahoo.com     # Yahoo Mail (SSL required)
   icloud.com: imap.mail.me.com       # Apple iCloud (2FA might be needed)
 
-  # Russian Services
-  mail.ru: imap.mail.ru              # Mail.ru service
-
   # European Providers
-  gmx.com: imap.gmx.com              # GMX International
-  gmx.net: imap.gmx.net              # GMX Germany - Primary
   gmx.de: imap.gmx.net               # GMX Germany - Secondary
 
   # Polish Services
@@ -79,4 +73,3 @@ imap_settings:
   onet.com.pl: imap.poczta.onet.pl   # Onet Mail - Secondary
   op.pl: imap.poczta.onet.pl         # Onet Mail - Legacy
   onet.eu: imap.poczta.onet.pl       # Onet Mail - European
-  gazeta.pl: imap.gazeta.pl          # Gazeta Mail Service

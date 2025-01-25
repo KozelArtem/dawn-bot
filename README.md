@@ -4,10 +4,10 @@
   <img src="./console/images/console.png" alt="Dawn Extension Bot Console" width="600"/>
   
   <p align="center">
-    <a href="https://t.me/JamBitPY">
+    <a href="https://t.me/">
       <img src="https://img.shields.io/badge/Telegram-Channel-blue?style=for-the-badge&logo=telegram" alt="Telegram Channel">
     </a>
-    <a href="https://t.me/JamBitChat">
+    <a href="https://t.me/">
       <img src="https://img.shields.io/badge/Telegram-Chat-blue?style=for-the-badge&logo=telegram" alt="Telegram Chat">
     </a>
   </p>
@@ -180,5 +180,5 @@ socks5://user:pass@ip:port
 ## 📞 Support
 
 Join our Telegram community for support:
-- 📢 Channel: [JamBitPY](https://t.me/JamBitPY)
-- 💬 Chat: [JamBitChat](https://t.me/JamBitChat)
+- 📢 [Channel](https://t.me/)
+- 💬 [Chat](https://t.me/)
