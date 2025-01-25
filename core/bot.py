@@ -21,7 +21,9 @@ class Bot(DawnExtensionAPI):
             try:
                 if captcha_type == "image":
                     puzzle_id = await self.get_puzzle_id()
+                    logger.info(f"Puzzle id {puzzle_id}")
                     image = await self.get_puzzle_image(puzzle_id)
+                    logger.info(f"Puzzle image {image}")
 
                     logger.info(
                         f"Account: {self.account_data.email} | Got puzzle image, solving..."
